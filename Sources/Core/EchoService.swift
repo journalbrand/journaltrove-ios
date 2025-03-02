@@ -2,7 +2,7 @@ import Foundation
 
 /// A simple service that echoes back provided strings
 ///
-/// This service fulfills Req.iOS.1 by demonstrating input handling capability
+/// This service fulfills System.1.1.iOS.1 by demonstrating input handling capability
 public struct EchoService {
     
     /// Create a new instance of EchoService
