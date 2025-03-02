@@ -1,16 +1,16 @@
 <!-- === WATCHER HEADER START === -->
-<!-- File: todo-ios/README.md -->
+<!-- File: journaltrove-ios/README.md -->
 <!-- Managed by file watcher -->
 <!-- === WATCHER HEADER END === -->
-# 🍏 Todo App iOS Client
+# 🍏 journaltrove App iOS Client
 
-This repository contains the iOS Swift client implementation for the Todo App ecosystem. It provides a native iOS interface for creating, managing, and synchronizing todo lists.
+This repository contains the iOS Swift client implementation for the journaltrove App ecosystem. It provides a native iOS interface for creating, managing, and synchronizing journaltrove lists.
 
 ## 📚 Overview
 
-The iOS client is part of the larger Todo App ecosystem that enables secure, decentralized todo list management. Key features include:
+The iOS client is part of the larger journaltrove App ecosystem that enables secure, decentralized journaltrove list management. Key features include:
 
-- Local todo list creation and management
+- Local journaltrove list creation and management
 - Secure storage using Swift's Keychain capabilities
 - Synchronization with IPFS for cross-device access
 - Cryptographic identity management for secure operations
@@ -47,17 +47,17 @@ The iOS client currently implements:
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/journalbrand/todo-ios.git
+git clone https://github.com/journalbrand/journaltrove-ios.git
 ```
 
 2. Open the package in Xcode:
 ```bash
-open todo-ios/Package.swift
+open journaltrove-ios/Package.swift
 ```
 
 3. Build the package:
 ```bash
-cd todo-ios
+cd journaltrove-ios
 swift build
 ```
 
@@ -69,7 +69,7 @@ swift test
 ### Project Structure
 
 ```
-todo-ios/
+journaltrove-ios/
 ├── Package.swift           # Swift Package Manager configuration
 ├── Sources/                # Source code
 │   └── Core/               # Core functionality
@@ -93,8 +93,8 @@ The iOS client implements specific requirements defined in the JSON-LD format:
 ### Key Requirements
 
 - **System.1.1.iOS.1**: Input handling capability (implemented in EchoService)
-- **System.1.1.iOS.1.1**: Todo List Management (planned)
-- **System.1.1.iOS.1.2**: Todo Item Management (planned)
+- **System.1.1.iOS.1.1**: journaltrove List Management (planned)
+- **System.1.1.iOS.1.2**: journaltrove Item Management (planned)
 - **System.1.1.iOS.1.3**: iOS Local Storage (planned)
 - **System.2.1.iOS.1.1**: iOS IPFS Backup (planned)
 - **System.3.1.iOS.1**: iOS Cryptographic Identity (planned)
@@ -112,7 +112,7 @@ swift test
 
 ## 🔄 CI/CD Integration
 
-This repository integrates with the Todo App CI/CD pipeline:
+This repository integrates with the journaltrove App CI/CD pipeline:
 
 - **CI Workflow**: `.github/workflows/ci.yml`
 - **Artifacts**: Test results in JSON-LD format
@@ -122,9 +122,9 @@ This repository integrates with the Todo App CI/CD pipeline:
 
 The iOS client is part of a multi-repository ecosystem:
 
-- [todo-system](https://github.com/journalbrand/todo-system) - System-level coordination, requirements and CI/CD orchestration
-- [todo-android](https://github.com/journalbrand/todo-android) - Android client
-- [todo-ipfs](https://github.com/journalbrand/todo-ipfs) - IPFS node implementation
+- [journaltrove-system](https://github.com/journalbrand/journaltrove-system) - System-level coordination, requirements and CI/CD orchestration
+- [journaltrove-android](https://github.com/journalbrand/journaltrove-android) - Android client
+- [journaltrove-ipfs](https://github.com/journalbrand/journaltrove-ipfs) - IPFS node implementation
 
 ## 📝 Contributing
 
