@@ -7,43 +7,53 @@
       "name": "iOS Client",
       "description": "The iOS Swift client application",
       "version": "0.1.0",
-      "dateCreated": "2025-03-04T00:00:00Z"
+      "dateCreated": "2025-03-02T00:00:00Z"
     },
     {
-      "id": "System.2.1.iOS.1",
+      "id": "System.1.1.iOS.1.1",
       "type": "Requirement",
-      "name": "iOS Secure Enclave Key Generation",
-      "description": "The iOS client shall generate identity keys exclusively within the device Secure Enclave",
+      "name": "iOS journaltrove List Management",
+      "description": "The iOS client shall provide functionality to create, view, and manage multiple journaltrove lists",
       "status": "Draft",
       "priority": "High",
       "component": "iOS",
-      "parent": "System.2.1"
+      "parent": "System.1.1.iOS.1"
     },
     {
-      "id": "System.2.2.iOS.1",
+      "id": "System.1.1.iOS.1.2",
       "type": "Requirement",
-      "name": "iOS Biometric/PIN Authorization",
-      "description": "The iOS client shall require biometric or PIN authorization for all identity key operations",
+      "name": "iOS journaltrove Item Management",
+      "description": "The iOS client shall allow users to create, read, update, and delete journaltrove items within lists",
       "status": "Draft",
       "priority": "High",
       "component": "iOS",
-      "parent": "System.2.2"
+      "parent": "System.1.1.iOS.1"
     },
     {
-      "id": "System.2.3.iOS.1",
+      "id": "System.1.1.iOS.1.3",
       "type": "Requirement",
-      "name": "iOS DID Document Publication",
-      "description": "The iOS client shall publish user DID documents to IPNS via Kubo nodes",
+      "name": "iOS Local Storage",
+      "description": "The iOS client shall store journaltrove data securely in local device storage",
       "status": "Draft",
       "priority": "High",
       "component": "iOS",
-      "parent": "System.2.3"
+      "parent": "System.1.1.iOS.1"
+    },
+    {
+      "id": "System.2.1.iOS.1.1",
+      "type": "Requirement",
+      "name": "iOS IPFS Backup",
+      "description": "The iOS client shall backup journaltrove data to IPFS nodes and retrieve it when needed",
+      "status": "Draft",
+      "priority": "High",
+      "component": "iOS",
+      "parent": "System.2.1.iOS.1"
     },
     {
       "id": "System.3.1.iOS.1",
       "type": "Requirement",
-      "name": "iOS Journal Policy Enforcement",
-      "description": "The iOS client shall enforce local cryptographic checks of journal policy at member invite/update",
+      "name": "iOS Cryptographic Identity",
+      "description": "The iOS client shall generate and securely store ed25519 cryptographic keypairs in the device keychain",
       "status": "Draft",
       "priority": "High",
       "component": "iOS",
@@ -52,62 +62,12 @@
     {
       "id": "System.3.2.iOS.1",
       "type": "Requirement",
-      "name": "iOS Identity Update Notifications",
-      "description": "The iOS client shall provide explicit UI notifications for identity metadata updates, requiring user acceptance",
+      "name": "iOS Identity Exchange",
+      "description": "The iOS client shall provide a mechanism to securely transfer identity information to other devices using ephemeral keys",
       "status": "Draft",
       "priority": "Medium",
       "component": "iOS",
       "parent": "System.3.2"
-    },
-    {
-      "id": "System.3.1.iOS.2",
-      "type": "Requirement",
-      "name": "iOS Journal Creation",
-      "description": "The iOS client shall enable users to create new journals with defined policies",
-      "status": "Draft",
-      "priority": "High",
-      "component": "iOS",
-      "parent": "System.3.1"
-    },
-    {
-      "id": "System.4.1.iOS.1",
-      "type": "Requirement",
-      "name": "iOS Local Robot Support",
-      "description": "The iOS client shall support local robots with secure enclave-stored identities",
-      "status": "Draft",
-      "priority": "High",
-      "component": "iOS",
-      "parent": "System.4.1"
-    },
-    {
-      "id": "System.4.2.iOS.1",
-      "type": "Requirement",
-      "name": "iOS Robot Owner Reference",
-      "description": "Local robots on iOS shall explicitly reference human owner DIDs and be signed by owner private keys",
-      "status": "Draft",
-      "priority": "High",
-      "component": "iOS",
-      "parent": "System.4.2"
-    },
-    {
-      "id": "System.4.3.iOS.1",
-      "type": "Requirement",
-      "name": "iOS Robot Capability Metadata",
-      "description": "Local robots on iOS shall have explicit capability metadata signed by the owner",
-      "status": "Draft",
-      "priority": "Medium",
-      "component": "iOS",
-      "parent": "System.4.3"
-    },
-    {
-      "id": "System.5.1.iOS.1",
-      "type": "Requirement",
-      "name": "iOS Hardware Attestation",
-      "description": "The iOS client shall enforce hardware attestation verification at DID import/addition",
-      "status": "Draft",
-      "priority": "High",
-      "component": "iOS",
-      "parent": "System.5.1"
     }
   ]
 } 

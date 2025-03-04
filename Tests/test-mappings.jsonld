@@ -15,22 +15,22 @@
               "@id": "testEcho",
               "@type": "TestCase",
               "name": "testEcho",
-              "verifies": "System.2.1.iOS.1",
-              "description": "Verifies that identity key generation uses the Secure Enclave"
+              "verifies": "System.1.1.iOS.1",
+              "description": "Verifies that the echo method correctly returns input strings"
             },
             {
               "@id": "testEchoWithTimestamp",
               "@type": "TestCase",
               "name": "testEchoWithTimestamp",
-              "verifies": "System.2.1.iOS.1",
-              "description": "Verifies timestamp usage with secure enclave keys"
+              "verifies": "System.1.1.iOS.1",
+              "description": "Verifies that the echoWithTimestamp method adds a timestamp to the input"
             },
             {
               "@id": "testEchoWithEmptyString",
               "@type": "TestCase",
               "name": "testEchoWithEmptyString",
-              "verifies": "System.2.1.iOS.1",
-              "description": "Verifies handling of edge cases with secure enclave operations"
+              "verifies": "System.1.1.iOS.1",
+              "description": "Verifies that the echo method handles empty strings correctly"
             }
           ]
         }
