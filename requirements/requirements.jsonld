@@ -7,77 +7,107 @@
       "name": "iOS Client",
       "description": "The iOS Swift client application",
       "version": "0.1.0",
-      "dateCreated": "2025-03-02T00:00:00Z"
+      "dateCreated": "2025-03-04T00:00:00Z"
     },
     {
-      "id": "FR-2.1.iOS.1",
+      "id": "System.2.1.iOS.1",
       "type": "Requirement",
-      "name": "iOS Secure Enclave Key Storage",
-      "description": "The iOS client shall generate and store all cryptographic keys in the device Secure Enclave",
+      "name": "iOS Secure Enclave Key Generation",
+      "description": "The iOS client shall generate identity keys exclusively within the device Secure Enclave",
       "status": "Draft",
       "priority": "High",
       "component": "iOS",
-      "parent": "FR-2.1.iOS"
+      "parent": "System.2.1"
     },
     {
-      "id": "FR-2.2.iOS.1",
+      "id": "System.2.2.iOS.1",
       "type": "Requirement",
-      "name": "iOS Biometric Authentication",
-      "description": "The iOS client shall require Face ID, Touch ID, or passcode authentication for all key operations",
+      "name": "iOS Biometric/PIN Authorization",
+      "description": "The iOS client shall require biometric or PIN authorization for all identity key operations",
       "status": "Draft",
       "priority": "High",
       "component": "iOS",
-      "parent": "FR-2.2.iOS"
+      "parent": "System.2.2"
     },
     {
-      "id": "FR-2.3.iOS.1",
+      "id": "System.2.3.iOS.1",
       "type": "Requirement",
-      "name": "iOS DID Creation",
-      "description": "The iOS client shall create and publish Decentralized Identifiers (DIDs) to IPFS/IPNS",
+      "name": "iOS DID Document Publication",
+      "description": "The iOS client shall publish user DID documents to IPNS via Kubo nodes",
       "status": "Draft",
       "priority": "High",
       "component": "iOS",
-      "parent": "FR-2.3.iOS"
+      "parent": "System.2.3"
     },
     {
-      "id": "FR-2.4.iOS.1",
+      "id": "System.3.1.iOS.1",
       "type": "Requirement",
-      "name": "iOS Journal Policy Validation",
-      "description": "The iOS client shall verify journal policies cryptographically before allowing membership changes",
+      "name": "iOS Journal Policy Enforcement",
+      "description": "The iOS client shall enforce local cryptographic checks of journal policy at member invite/update",
       "status": "Draft",
       "priority": "High",
       "component": "iOS",
-      "parent": "FR-2.4.iOS"
+      "parent": "System.3.1"
     },
     {
-      "id": "FR-2.5.iOS.1",
+      "id": "System.3.2.iOS.1",
+      "type": "Requirement",
+      "name": "iOS Identity Update Notifications",
+      "description": "The iOS client shall provide explicit UI notifications for identity metadata updates, requiring user acceptance",
+      "status": "Draft",
+      "priority": "Medium",
+      "component": "iOS",
+      "parent": "System.3.2"
+    },
+    {
+      "id": "System.3.1.iOS.2",
+      "type": "Requirement",
+      "name": "iOS Journal Creation",
+      "description": "The iOS client shall enable users to create new journals with defined policies",
+      "status": "Draft",
+      "priority": "High",
+      "component": "iOS",
+      "parent": "System.3.1"
+    },
+    {
+      "id": "System.4.1.iOS.1",
+      "type": "Requirement",
+      "name": "iOS Local Robot Support",
+      "description": "The iOS client shall support local robots with secure enclave-stored identities",
+      "status": "Draft",
+      "priority": "High",
+      "component": "iOS",
+      "parent": "System.4.1"
+    },
+    {
+      "id": "System.4.2.iOS.1",
+      "type": "Requirement",
+      "name": "iOS Robot Owner Reference",
+      "description": "Local robots on iOS shall explicitly reference human owner DIDs and be signed by owner private keys",
+      "status": "Draft",
+      "priority": "High",
+      "component": "iOS",
+      "parent": "System.4.2"
+    },
+    {
+      "id": "System.4.3.iOS.1",
+      "type": "Requirement",
+      "name": "iOS Robot Capability Metadata",
+      "description": "Local robots on iOS shall have explicit capability metadata signed by the owner",
+      "status": "Draft",
+      "priority": "Medium",
+      "component": "iOS",
+      "parent": "System.4.3"
+    },
+    {
+      "id": "System.5.1.iOS.1",
       "type": "Requirement",
       "name": "iOS Hardware Attestation",
-      "description": "The iOS client shall verify hardware attestation credentials when importing DIDs",
+      "description": "The iOS client shall enforce hardware attestation verification at DID import/addition",
       "status": "Draft",
       "priority": "High",
       "component": "iOS",
-      "parent": "FR-2.5.iOS"
-    },
-    {
-      "id": "QR-2.1.iOS.1",
-      "type": "Requirement",
-      "name": "iOS User-Friendly Identity UI",
-      "description": "The iOS client shall provide a simple, jargon-free interface for identity management",
-      "status": "Draft",
-      "priority": "Medium",
-      "component": "iOS",
-      "parent": "QR-2.1.iOS"
-    },
-    {
-      "id": "QR-2.2.iOS.1",
-      "type": "Requirement",
-      "name": "iOS Transparent Change Notifications",
-      "description": "The iOS client shall provide clear notifications explaining metadata or signature changes",
-      "status": "Draft",
-      "priority": "Medium",
-      "component": "iOS",
-      "parent": "QR-2.2.iOS"
+      "parent": "System.5.1"
     }
   ]
 } 
