@@ -15,21 +15,21 @@
               "@id": "testEcho",
               "@type": "TestCase",
               "name": "testEcho",
-              "verifies": "System.1.1.iOS.1",
+              "verifies": "FR-2.1.iOS.1",
               "description": "Verifies that the echo method correctly returns input strings"
             },
             {
               "@id": "testEchoWithTimestamp",
               "@type": "TestCase",
               "name": "testEchoWithTimestamp",
-              "verifies": "System.1.1.iOS.1",
+              "verifies": "FR-2.2.iOS.1",
               "description": "Verifies that the echoWithTimestamp method adds a timestamp to the input"
             },
             {
               "@id": "testEchoWithEmptyString",
               "@type": "TestCase",
               "name": "testEchoWithEmptyString",
-              "verifies": "System.1.1.iOS.1",
+              "verifies": "FR-2.3.iOS.1",
               "description": "Verifies that the echo method handles empty strings correctly"
             }
           ]

@@ -10,64 +10,74 @@
       "dateCreated": "2025-03-02T00:00:00Z"
     },
     {
-      "id": "System.1.1.iOS.1.1",
+      "id": "FR-2.1.iOS.1",
       "type": "Requirement",
-      "name": "iOS journaltrove List Management",
-      "description": "The iOS client shall provide functionality to create, view, and manage multiple journaltrove lists",
+      "name": "iOS Secure Enclave Key Storage",
+      "description": "The iOS client shall generate and store all cryptographic keys in the device Secure Enclave",
       "status": "Draft",
       "priority": "High",
       "component": "iOS",
-      "parent": "System.1.1.iOS.1"
+      "parent": "FR-2.1.iOS"
     },
     {
-      "id": "System.1.1.iOS.1.2",
+      "id": "FR-2.2.iOS.1",
       "type": "Requirement",
-      "name": "iOS journaltrove Item Management",
-      "description": "The iOS client shall allow users to create, read, update, and delete journaltrove items within lists",
+      "name": "iOS Biometric Authentication",
+      "description": "The iOS client shall require Face ID, Touch ID, or passcode authentication for all key operations",
       "status": "Draft",
       "priority": "High",
       "component": "iOS",
-      "parent": "System.1.1.iOS.1"
+      "parent": "FR-2.2.iOS"
     },
     {
-      "id": "System.1.1.iOS.1.3",
+      "id": "FR-2.3.iOS.1",
       "type": "Requirement",
-      "name": "iOS Local Storage",
-      "description": "The iOS client shall store journaltrove data securely in local device storage",
+      "name": "iOS DID Creation",
+      "description": "The iOS client shall create and publish Decentralized Identifiers (DIDs) to IPFS/IPNS",
       "status": "Draft",
       "priority": "High",
       "component": "iOS",
-      "parent": "System.1.1.iOS.1"
+      "parent": "FR-2.3.iOS"
     },
     {
-      "id": "System.2.1.iOS.1.1",
+      "id": "FR-2.4.iOS.1",
       "type": "Requirement",
-      "name": "iOS IPFS Backup",
-      "description": "The iOS client shall backup journaltrove data to IPFS nodes and retrieve it when needed",
+      "name": "iOS Journal Policy Validation",
+      "description": "The iOS client shall verify journal policies cryptographically before allowing membership changes",
       "status": "Draft",
       "priority": "High",
       "component": "iOS",
-      "parent": "System.2.1.iOS.1"
+      "parent": "FR-2.4.iOS"
     },
     {
-      "id": "System.3.1.iOS.1",
+      "id": "FR-2.5.iOS.1",
       "type": "Requirement",
-      "name": "iOS Cryptographic Identity",
-      "description": "The iOS client shall generate and securely store ed25519 cryptographic keypairs in the device keychain",
+      "name": "iOS Hardware Attestation",
+      "description": "The iOS client shall verify hardware attestation credentials when importing DIDs",
       "status": "Draft",
       "priority": "High",
       "component": "iOS",
-      "parent": "System.3.1"
+      "parent": "FR-2.5.iOS"
     },
     {
-      "id": "System.3.2.iOS.1",
+      "id": "QR-2.1.iOS.1",
       "type": "Requirement",
-      "name": "iOS Identity Exchange",
-      "description": "The iOS client shall provide a mechanism to securely transfer identity information to other devices using ephemeral keys",
+      "name": "iOS User-Friendly Identity UI",
+      "description": "The iOS client shall provide a simple, jargon-free interface for identity management",
       "status": "Draft",
       "priority": "Medium",
       "component": "iOS",
-      "parent": "System.3.2"
+      "parent": "QR-2.1.iOS"
+    },
+    {
+      "id": "QR-2.2.iOS.1",
+      "type": "Requirement",
+      "name": "iOS Transparent Change Notifications",
+      "description": "The iOS client shall provide clear notifications explaining metadata or signature changes",
+      "status": "Draft",
+      "priority": "Medium",
+      "component": "iOS",
+      "parent": "QR-2.2.iOS"
     }
   ]
 } 
