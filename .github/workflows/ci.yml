@@ -76,6 +76,13 @@ jobs:
           path: Tests/results/test-results.jsonld
           if-no-files-found: error
 
+      - name: 📤 Upload Requirements
+        uses: actions/upload-artifact@v4
+        with:
+          name: requirements-jsonld
+          path: requirements/requirements.jsonld
+          if-no-files-found: error
+
       # Note: This workflow will be enhanced incrementally:
       # 1. Swift code compilation will be added once we have initial Swift implementation
       # 2. Unit tests will be added when we have testable components
