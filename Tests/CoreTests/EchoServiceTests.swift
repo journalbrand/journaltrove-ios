@@ -54,4 +54,14 @@ final class EchoServiceTests: XCTestCase {
         // Then
         XCTAssertEqual(output, input, "Echo should work with empty strings")
     }
+    
+    /// Test that the identityVerification method returns 'bar'
+    /// This test verifies requirement System.2.1.iOS.2
+    func testIdentityVerification() {
+        // When
+        let output = echoService.identityVerification()
+        
+        // Then
+        XCTAssertEqual(output, "bar", "Identity verification should return 'bar'")
+    }
 } 

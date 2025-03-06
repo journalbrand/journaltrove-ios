@@ -26,4 +26,10 @@ public struct EchoService {
         
         return "\(message) (timestamp: \(timestamp))"
     }
+    
+    /// Returns a specific string for identity verification
+    /// - Returns: The string "bar" to fulfill System.2.1.iOS.2 requirement
+    public func identityVerification() -> String {
+        return "bar"
+    }
 } 

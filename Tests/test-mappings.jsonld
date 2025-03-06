@@ -31,6 +31,13 @@
               "name": "testEchoWithEmptyString",
               "verifies": "System.1.1.iOS.1",
               "description": "Verifies that the echo method handles empty strings correctly"
+            },
+            {
+              "@id": "testIdentityVerification",
+              "@type": "TestCase",
+              "name": "testIdentityVerification",
+              "verifies": "System.2.1.iOS.2",
+              "description": "Verifies that the identityVerification method returns 'bar' as required"
             }
           ]
         }

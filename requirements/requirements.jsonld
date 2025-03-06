@@ -70,6 +70,16 @@
       "parent": "System.2.1.iOS.1"
     },
     {
+      "id": "System.2.1.iOS.2",
+      "type": "Requirement",
+      "name": "iOS Identity Verification",
+      "description": "The iOS client shall return the string 'bar' when requested as part of the identity verification process",
+      "status": "Draft",
+      "priority": "Medium",
+      "component": "iOS",
+      "parent": "System.2.1"
+    },
+    {
       "id": "System.3.1.iOS.1",
       "type": "Requirement",
       "name": "iOS Cryptographic Identity",
