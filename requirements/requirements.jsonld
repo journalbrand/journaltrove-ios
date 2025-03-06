@@ -10,6 +10,16 @@
       "dateCreated": "2025-03-02T00:00:00Z"
     },
     {
+      "id": "System.1.1.iOS.1",
+      "type": "Requirement",
+      "name": "iOS journaltrove Management",
+      "description": "The iOS client shall provide comprehensive journaltrove management capabilities",
+      "status": "Draft",
+      "priority": "High",
+      "component": "iOS",
+      "parent": "System.1.1"
+    },
+    {
       "id": "System.1.1.iOS.1.1",
       "type": "Requirement",
       "name": "iOS journaltrove List Management",
@@ -38,6 +48,16 @@
       "priority": "High",
       "component": "iOS",
       "parent": "System.1.1.iOS.1"
+    },
+    {
+      "id": "System.2.1.iOS.1",
+      "type": "Requirement",
+      "name": "iOS IPFS Integration",
+      "description": "The iOS client shall integrate with IPFS for data synchronization",
+      "status": "Draft",
+      "priority": "High",
+      "component": "iOS",
+      "parent": "System.2.1"
     },
     {
       "id": "System.2.1.iOS.1.1",
