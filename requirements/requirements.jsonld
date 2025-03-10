@@ -98,6 +98,16 @@
       "priority": "Medium",
       "component": "iOS",
       "parent": "System.3.2"
+    },
+    {
+      "id": "System.4.iOS.1",
+      "type": "Requirement",
+      "name": "iOS Timekeeping Service",
+      "description": "The iOS app shall provide the current system time upon request",
+      "status": "Draft",
+      "priority": "High",
+      "component": "iOS",
+      "parent": "System.4"
     }
   ]
 } 

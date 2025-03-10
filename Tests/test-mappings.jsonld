@@ -40,6 +40,27 @@
               "description": "Verifies that the identityVerification method returns 'bar' as required"
             }
           ]
+        },
+        {
+          "@id": "TimeServiceTests",
+          "@type": "TestSuite",
+          "name": "TimeServiceTests",
+          "testCases": [
+            {
+              "@id": "testCurrentTime",
+              "@type": "TestCase",
+              "name": "testCurrentTime",
+              "verifies": "System.4.iOS.1",
+              "description": "Verifies that the currentTime method returns an accurate time"
+            },
+            {
+              "@id": "testCurrentTimeString",
+              "@type": "TestCase",
+              "name": "testCurrentTimeString",
+              "verifies": "System.4.iOS.1",
+              "description": "Verifies that the currentTimeString method returns a properly formatted time string"
+            }
+          ]
         }
       ]
     }
